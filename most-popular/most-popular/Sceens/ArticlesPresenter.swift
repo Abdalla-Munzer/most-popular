@@ -4,7 +4,7 @@
 //
 //  Created by Abdalla Munzer on 6/10/20.
 //  Copyright (c) 2020 com.most-popular. All rights reserved.
-
+import Moya
 final class ArticlesPresenter {
     weak private var output: ArticlesPresenterOutput!
 
@@ -15,10 +15,14 @@ final class ArticlesPresenter {
 
 // MARK: - ArticlesPresenterInput
 extension ArticlesPresenter: ArticlesPresenterInput {
-    func getMostPopularArticlesSuccess(articles: Articles?) {
-        output.getMostPopularArticlesSuccess(articles: articles)
+    func getMostPopularArticlesSuccess(response: Response) {
+        do {
+            let articles = try response.map(Articles.self)
+            output.getMostPopularArticlesSuccess(articles: articles)
+        } catch {
+            output.getMostPopularArticlesFailed(error: error)
+        }
     }
-
     func getMostPopularArticlesFailed(error: Error?) {
         output.getMostPopularArticlesFailed(error: error)
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+import Moya
 protocol ArticlesConfigurator {
     func configureWith(viewController: ArticlesViewController)
 }
@@ -34,7 +34,7 @@ protocol ArticlesViewOutput: AnyObject {
 }
 
 protocol ArticlesInteractorOutput: AnyObject {
-    func getMostPopularArticlesSuccess(articles: Articles?)
+    func getMostPopularArticlesSuccess(response: Response)
     func getMostPopularArticlesFailed(error: Error?)
 
 }

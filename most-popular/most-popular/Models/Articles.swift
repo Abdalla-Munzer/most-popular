@@ -8,7 +8,7 @@
 
 import Foundation
 // MARK: - Articles
-struct Articles: Codable {
+struct Articles: Codable, Configurable {
     let status, copyright: String?
     let numResults: Int?
     let results: [Result]?
@@ -21,7 +21,7 @@ struct Articles: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct Result: Codable, Configurable {
     let uri: String?
     let url: String?
     let articlesID, assetID: Int?

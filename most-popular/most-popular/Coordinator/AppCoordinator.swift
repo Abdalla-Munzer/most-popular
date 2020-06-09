@@ -21,13 +21,12 @@ extension AppCoordinatorImplementation: AppCoordinator {
     func start() {
         guard let articlesViewController = ArticlesViewController.instantiateFromAppStoryboard(.articles) else { return }
         articlesViewController.configurator = ArticlesConfiguratorImplementation()
-        let mainNavigation = addNavigationBarTo(viewController: articlesViewController, withTitle: "articles")
+        let mainNavigation = addNavigationBarTo(viewController: articlesViewController)
         window?.rootViewController = mainNavigation
         window?.makeKeyAndVisible()
     }
-    func addNavigationBarTo(viewController: UIViewController, withTitle: String) -> UINavigationController {
+    func addNavigationBarTo(viewController: UIViewController) -> UINavigationController {
         let navigationController = UINavigationController(rootViewController: viewController)
-        navigationController.title = withTitle.uppercased()
         navigationController.setNavigationBarHidden(true, animated: false)
         return navigationController
     }
