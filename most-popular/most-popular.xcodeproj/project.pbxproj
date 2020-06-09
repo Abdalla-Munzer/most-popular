@@ -19,6 +19,8 @@
 		8A5D4AC3249040B10032DEE4 /* ArticlesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D4ABD249040B10032DEE4 /* ArticlesInteractor.swift */; };
 		8A5D4AC4249040B10032DEE4 /* ArticlesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D4ABE249040B10032DEE4 /* ArticlesConfigurator.swift */; };
 		8A5D4AC6249040C40032DEE4 /* Articles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5D4AC5249040C40032DEE4 /* Articles.storyboard */; };
+		8A5D4AC8249044530032DEE4 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D4AC7249044530032DEE4 /* Articles.swift */; };
+		8A5D4ACB2490471E0032DEE4 /* UIViewControllerExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D4ACA2490471E0032DEE4 /* UIViewControllerExtenstions.swift */; };
 		D0677304435C5513BCE82002 /* Pods_most_popular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8D386C974B23DEA90C1023 /* Pods_most_popular.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		8A5D4ABD249040B10032DEE4 /* ArticlesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesInteractor.swift; sourceTree = "<group>"; };
 		8A5D4ABE249040B10032DEE4 /* ArticlesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesConfigurator.swift; sourceTree = "<group>"; };
 		8A5D4AC5249040C40032DEE4 /* Articles.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Articles.storyboard; sourceTree = "<group>"; };
+		8A5D4AC7249044530032DEE4 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		8A5D4ACA2490471E0032DEE4 /* UIViewControllerExtenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtenstions.swift; sourceTree = "<group>"; };
 		A0A3DB29EDEBA3A249F97073 /* Pods-most-popular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-most-popular.release.xcconfig"; path = "Target Support Files/Pods-most-popular/Pods-most-popular.release.xcconfig"; sourceTree = "<group>"; };
 		FF81371832C2853464B24719 /* Pods-most-popular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-most-popular.debug.xcconfig"; path = "Target Support Files/Pods-most-popular/Pods-most-popular.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +87,7 @@
 		8A5D4A9C24903A7B0032DEE4 /* most-popular */ = {
 			isa = PBXGroup;
 			children = (
+				8A5D4AC9249047010032DEE4 /* Extenstions */,
 				8A5D4AB424903BD80032DEE4 /* Coordinator */,
 				8A5D4AB324903BBE0032DEE4 /* Sceens */,
 				8A5D4AB224903BB20032DEE4 /* Models */,
@@ -106,6 +111,7 @@
 		8A5D4AB224903BB20032DEE4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8A5D4AC7249044530032DEE4 /* Articles.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,6 +138,14 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		8A5D4AC9249047010032DEE4 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				8A5D4ACA2490471E0032DEE4 /* UIViewControllerExtenstions.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
 		F42B50591EBFD9456D38A808 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +167,7 @@
 				8A5D4A9724903A7B0032DEE4 /* Frameworks */,
 				8A5D4A9824903A7B0032DEE4 /* Resources */,
 				BFDA5B2FD1C0ED1B0F81FA8C /* [CP] Embed Pods Frameworks */,
+				8A5D4ACC2490480F0032DEE4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,6 +247,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8A5D4ACC2490480F0032DEE4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		BFDA5B2FD1C0ED1B0F81FA8C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +292,8 @@
 				8A5D4AB624903BEE0032DEE4 /* AppCoordinator.swift in Sources */,
 				8A5D4ABF249040B10032DEE4 /* ArticlesPresenter.swift in Sources */,
 				8A5D4AC4249040B10032DEE4 /* ArticlesConfigurator.swift in Sources */,
+				8A5D4ACB2490471E0032DEE4 /* UIViewControllerExtenstions.swift in Sources */,
+				8A5D4AC8249044530032DEE4 /* Articles.swift in Sources */,
 				8A5D4AC2249040B10032DEE4 /* ArticlesViewController.swift in Sources */,
 				8A5D4AC0249040B10032DEE4 /* ArticlesRouter.swift in Sources */,
 				8A5D4AC3249040B10032DEE4 /* ArticlesInteractor.swift in Sources */,
