@@ -35,7 +35,7 @@ extension AppCoordinatorImplementation: AppCoordinator {
 
 enum AppStoryboard: String {
     case articles = "Articles"
-    
+
     var instance: UIStoryboard {
         return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
     }

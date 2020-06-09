@@ -8,7 +8,7 @@
 import UIKit
 
 final class ArticlesViewController: UIViewController {
-    
+
     // MARK: - Properties
     var configurator: ArticlesConfigurator! {
         didSet {
@@ -17,6 +17,7 @@ final class ArticlesViewController: UIViewController {
     }
 	var output: ArticlesViewOutput!
 	var router: ArticlesRouter!
+    var articles: Articles?
 
 }
 
@@ -30,12 +31,12 @@ extension ArticlesViewController {
         super.viewWillAppear(animated)
         output.viewWillAppear()
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         output.viewWillDisappear()
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         router.prepare(for: segue, sender: sender)
     }
@@ -52,5 +53,11 @@ private extension ArticlesViewController {
 
 // MARK: - ArticlesPresenterOutput
 extension ArticlesViewController: ArticlesPresenterOutput {
+    func getMostPopularArticlesSuccess(articles: Articles?) {
+        self.articles = articles
+    }
 
+    func getMostPopularArticlesFailed(error: Error?) {
+
+    }
 }

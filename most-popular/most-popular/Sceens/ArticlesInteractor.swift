@@ -16,14 +16,18 @@ final class ArticlesInteractor {
 
 // MARK: - ArticlesInteractorInput
 extension ArticlesInteractor: ArticlesInteractorInput {
+    func getMostPopularArticles() {
+
+    }
+
 	func viewDidLoad() {
 
     }
-    func viewWillAppear(){
-        
+    func viewWillAppear() {
+
     }
-    func viewWillDisappear(){
-        
+    func viewWillDisappear() {
+
     }
 
 }

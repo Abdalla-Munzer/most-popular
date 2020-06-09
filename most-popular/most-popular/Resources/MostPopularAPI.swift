@@ -14,7 +14,7 @@ public enum MostPopularAPI {
 }
 
 extension MostPopularAPI: TargetType {
-    
+
     public var baseURL: URL { return URL(string: "https://api.nytimes.com")! }
     public var path: String {
         return "/svc/mostpopular/v2/viewed/7.json"

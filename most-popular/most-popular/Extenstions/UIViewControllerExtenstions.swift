@@ -8,7 +8,7 @@
 
 import UIKit
 extension UIViewController {
-    func showAlertWith(title: String , message: String) {
+    func showAlertWith(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         UIApplication.shared.keyWindow?.rootViewController?.topMostViewController().present(alert, animated: true, completion: nil)
     }

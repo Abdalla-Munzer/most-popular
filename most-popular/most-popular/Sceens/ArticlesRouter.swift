@@ -7,11 +7,10 @@
 
 import UIKit
 
-final class ArticlesRouterImplementation :  ArticlesStorePassing{
+final class ArticlesRouterImplementation: ArticlesStorePassing {
 
     var dataStore: ArticlesDataStore?
 
-    
     fileprivate weak var viewController: ArticlesViewController?
 
     init(viewController: ArticlesViewController) {
@@ -21,7 +20,7 @@ final class ArticlesRouterImplementation :  ArticlesStorePassing{
 // MARK: - ArticlesRouter
 extension ArticlesRouterImplementation: ArticlesRouter {
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+
     }
 
 }

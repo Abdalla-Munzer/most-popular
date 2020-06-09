@@ -26,19 +26,22 @@ protocol ArticlesStorePassing {
 }
 
 // MARK: - Outputs
-protocol ArticlesViewOutput : AnyObject{
+protocol ArticlesViewOutput: AnyObject {
     func viewDidLoad()
     func viewWillAppear()
     func viewWillDisappear()
+    func getMostPopularArticles()
 }
 
-
-protocol ArticlesInteractorOutput : AnyObject{
+protocol ArticlesInteractorOutput: AnyObject {
+    func getMostPopularArticlesSuccess(articles: Articles?)
+    func getMostPopularArticlesFailed(error: Error?)
 
 }
 
-protocol ArticlesPresenterOutput : AnyObject{
-
+protocol ArticlesPresenterOutput: AnyObject {
+    func getMostPopularArticlesSuccess(articles: Articles?)
+    func getMostPopularArticlesFailed(error: Error?)
 }
 
 // MARK: - Inputs
