@@ -29,7 +29,6 @@ struct Result: Codable, Configurable {
     let publishedDate, updated, section: String?
     let subsection: String?
     let nytdsection, adxKeywords: String?
-    let column: JSONNull?
     let byline: String?
     let type: String?
     let title, abstract: String?
@@ -45,7 +44,7 @@ struct Result: Codable, Configurable {
         case publishedDate = "published_date"
         case updated, section, subsection, nytdsection
         case adxKeywords = "adx_keywords"
-        case column, byline, type, title, abstract
+        case byline, type, title, abstract
         case desFacet = "des_facet"
         case orgFacet = "org_facet"
         case perFacet = "per_facet"
@@ -77,33 +76,3 @@ struct MediaMetadatum: Codable {
     let height, width: Int?
 }
 
-// MARK: - Encode/decode helpers
-
-class JSONNull: Codable, Hashable {
-
-    public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
-        return true
-    }
-
-    public var josnHashValue: Int {
-        return 0
-    }
-
-    public func hash(into hasher: inout Hasher) {
-        // No-op
-    }
-
-    public init() {}
-
-    public required init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        if !container.decodeNil() {
-            throw DecodingError.typeMismatch(JSONNull.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull"))
-        }
-    }
-
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        try container.encodeNil()
-    }
-}
