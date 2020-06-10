@@ -21,3 +21,9 @@ _Note: The project created on xcode 11.5_
 
 most-popular, It was an application that called the API to get the most popular articles.
 
+## Testing
+For run all test case for unit test and uitest we use fastlane scrip, to run the scrip use the following comaned.
+
+```ruby
+fastlane tests
+```
