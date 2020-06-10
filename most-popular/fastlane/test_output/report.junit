@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='most-popularUITests.xctest' tests='3' failures='0'>
+  <testsuite name='most_popularTests.MostpopularTests' tests='1' failures='0'>
+    <testcase classname='most_popularTests.MostpopularTests' name='testCallArticlesApi' time='5.005'/>
+  </testsuite>
+  <testsuite name='most_popularUITests.MostpopularUITests' tests='2' failures='0'>
+    <testcase classname='most_popularUITests.MostpopularUITests' name='testDidSelectCell' time='0.063'/>
+    <testcase classname='most_popularUITests.MostpopularUITests' name='testLaunchPerformance' time='14.331'/>
+  </testsuite>
+</testsuites>
