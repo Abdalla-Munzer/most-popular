@@ -2,7 +2,7 @@
 
 # most-popular
 
- The app going to use the VIP Architecture, Coordinator, TableView Adapter, UnitTest, UITest.
+ The app going to use the VIP Architecture, Coordinator, TableView Adapter, UnitTest, UITest, SwiftLint.
  
 ## Instalation
 
