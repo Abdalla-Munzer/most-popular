@@ -27,11 +27,19 @@
 		8A5D4AD724904EA20032DEE4 /* Cellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D4AD424904EA20032DEE4 /* Cellable.swift */; };
 		8A5D4ADA24904F830032DEE4 /* ArticlesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D4AD924904F830032DEE4 /* ArticlesCell.swift */; };
 		8A5D4AE2249058780032DEE4 /* most_popularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D4AE1249058780032DEE4 /* most_popularTests.swift */; };
+		8A5D4AF024905DD70032DEE4 /* most_popularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D4AEF24905DD70032DEE4 /* most_popularUITests.swift */; };
 		D0677304435C5513BCE82002 /* Pods_most_popular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8D386C974B23DEA90C1023 /* Pods_most_popular.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8A5D4AE4249058780032DEE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A5D4A9224903A7B0032DEE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A5D4A9924903A7B0032DEE4;
+			remoteInfo = "most-popular";
+		};
+		8A5D4AF224905DD70032DEE4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8A5D4A9224903A7B0032DEE4 /* Project object */;
 			proxyType = 1;
@@ -66,6 +74,9 @@
 		8A5D4ADF249058780032DEE4 /* most-popularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "most-popularTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5D4AE1249058780032DEE4 /* most_popularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = most_popularTests.swift; sourceTree = "<group>"; };
 		8A5D4AE3249058780032DEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5D4AED24905DD60032DEE4 /* most-popularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "most-popularUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A5D4AEF24905DD70032DEE4 /* most_popularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = most_popularUITests.swift; sourceTree = "<group>"; };
+		8A5D4AF124905DD70032DEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0A3DB29EDEBA3A249F97073 /* Pods-most-popular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-most-popular.release.xcconfig"; path = "Target Support Files/Pods-most-popular/Pods-most-popular.release.xcconfig"; sourceTree = "<group>"; };
 		DE305DA8856C58DC7C66C17B /* Pods-most-popularTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-most-popularTests.release.xcconfig"; path = "Target Support Files/Pods-most-popularTests/Pods-most-popularTests.release.xcconfig"; sourceTree = "<group>"; };
 		EBB680488D7BB4CD01156AA3 /* Pods_most_popularTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_most_popularTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A5D4AEA24905DD60032DEE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,6 +124,7 @@
 			children = (
 				8A5D4A9C24903A7B0032DEE4 /* most-popular */,
 				8A5D4AE0249058780032DEE4 /* most-popularTests */,
+				8A5D4AEE24905DD70032DEE4 /* most-popularUITests */,
 				8A5D4A9B24903A7B0032DEE4 /* Products */,
 				F42B50591EBFD9456D38A808 /* Pods */,
 				25544E5A05E32CB87723DC77 /* Frameworks */,
@@ -117,6 +136,7 @@
 			children = (
 				8A5D4A9A24903A7B0032DEE4 /* most-popular.app */,
 				8A5D4ADF249058780032DEE4 /* most-popularTests.xctest */,
+				8A5D4AED24905DD60032DEE4 /* most-popularUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,6 +232,15 @@
 			path = "most-popularTests";
 			sourceTree = "<group>";
 		};
+		8A5D4AEE24905DD70032DEE4 /* most-popularUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A5D4AEF24905DD70032DEE4 /* most_popularUITests.swift */,
+				8A5D4AF124905DD70032DEE4 /* Info.plist */,
+			);
+			path = "most-popularUITests";
+			sourceTree = "<group>";
+		};
 		F42B50591EBFD9456D38A808 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +294,24 @@
 			productReference = 8A5D4ADF249058780032DEE4 /* most-popularTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8A5D4AEC24905DD60032DEE4 /* most-popularUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A5D4AF624905DD70032DEE4 /* Build configuration list for PBXNativeTarget "most-popularUITests" */;
+			buildPhases = (
+				8A5D4AE924905DD60032DEE4 /* Sources */,
+				8A5D4AEA24905DD60032DEE4 /* Frameworks */,
+				8A5D4AEB24905DD60032DEE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A5D4AF324905DD70032DEE4 /* PBXTargetDependency */,
+			);
+			name = "most-popularUITests";
+			productName = "most-popularUITests";
+			productReference = 8A5D4AED24905DD60032DEE4 /* most-popularUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -279,6 +326,10 @@
 						CreatedOnToolsVersion = 11.5;
 					};
 					8A5D4ADE249058780032DEE4 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 8A5D4A9924903A7B0032DEE4;
+					};
+					8A5D4AEC24905DD60032DEE4 = {
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = 8A5D4A9924903A7B0032DEE4;
 					};
@@ -299,6 +350,7 @@
 			targets = (
 				8A5D4A9924903A7B0032DEE4 /* most-popular */,
 				8A5D4ADE249058780032DEE4 /* most-popularTests */,
+				8A5D4AEC24905DD60032DEE4 /* most-popularUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -315,6 +367,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8A5D4ADD249058780032DEE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A5D4AEB24905DD60032DEE4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -435,6 +494,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A5D4AE924905DD60032DEE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5D4AF024905DD70032DEE4 /* most_popularUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -442,6 +509,11 @@
 			isa = PBXTargetDependency;
 			target = 8A5D4A9924903A7B0032DEE4 /* most-popular */;
 			targetProxy = 8A5D4AE4249058780032DEE4 /* PBXContainerItemProxy */;
+		};
+		8A5D4AF324905DD70032DEE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A5D4A9924903A7B0032DEE4 /* most-popular */;
+			targetProxy = 8A5D4AF224905DD70032DEE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -653,6 +725,46 @@
 			};
 			name = Release;
 		};
+		8A5D4AF424905DD70032DEE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9489DA485L;
+				INFOPLIST_FILE = "most-popularUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.most-popular.most-popularUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "most-popular";
+			};
+			name = Debug;
+		};
+		8A5D4AF524905DD70032DEE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9489DA485L;
+				INFOPLIST_FILE = "most-popularUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.most-popular.most-popularUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "most-popular";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -679,6 +791,15 @@
 			buildConfigurations = (
 				8A5D4AE7249058780032DEE4 /* Debug */,
 				8A5D4AE8249058780032DEE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A5D4AF624905DD70032DEE4 /* Build configuration list for PBXNativeTarget "most-popularUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A5D4AF424905DD70032DEE4 /* Debug */,
+				8A5D4AF524905DD70032DEE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

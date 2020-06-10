@@ -75,4 +75,3 @@ struct MediaMetadatum: Codable {
     let format: String?
     let height, width: Int?
 }
-
