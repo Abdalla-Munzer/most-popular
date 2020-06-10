@@ -2,9 +2,15 @@
 
 # most-popular
 
+ The app going to use the VIP Architecture, Coordinator, TableView Adapter, UnitTest, UITest, SwiftLint.
+ 
 ## Instalation
 
-Clone the project then, run the following line for integrating it into your project.
+Clone the project useing the following comaned.
+```ruby
+git clone https://github.com/Abdalla-Munzer/most-popular.git
+```
+Then, run the following line for integrating it into your project.
 
 ```ruby
 pod install
