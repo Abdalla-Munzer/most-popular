@@ -2,6 +2,8 @@
 
 # most-popular
 
+ The app going to use the VIP Architecture, Coordinator, TableView Adapter, UnitTest, UITest.
+ 
 ## Instalation
 
 Clone the project useing the following comaned.
