@@ -9,6 +9,7 @@ Clone the project then, run the following line for integrating it into your proj
 ```ruby
 pod install
 ```
+_Note: The project created on xcode 11.5_
 
 ## Usage
 
